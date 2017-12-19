@@ -1,0 +1,22 @@
+<!-- Тег HTML, с него начинается страница --> 
+<html> 
+ <head>  
+  <title>Заголовок страницы</title> 
+  <!-- Подключаем JavaScript'овый скрипт с названием current_script.js --> 
+  <script type='text/javascript' src='current_script.js'></script> 
+  <!-- Подключаем main.css --> 
+  <link rel='StyleSheet' type='text/css' href='main.css' /> 
+ </head> 
+ <body> 
+  <div id='form_A'> 
+  <form action='user_checking.php' method='POST'> 
+   <input type='text' value='Имя' name='first_name' class='field' size='10' /><br /> 
+   <input type='text' value='Фамилия' name='last_name' class='field' size='15' /><br /> 
+   <br /> 
+   <!-- Кнопка отправки данных формы на сервер --> 
+   <input type='submit' value='Проверить' class='button' name='check_button'  
+     onmouseover="check_fields('first_name', 'last_name'); " /> 
+  </form> 
+  </div> 
+ </body> 
+</html> 
